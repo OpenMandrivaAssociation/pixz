@@ -54,4 +54,3 @@ make check
 %files
 %doc NEWS README* TODO
 %{_bindir}/pixz
-%{_mandir}/man1/pixz.1*
