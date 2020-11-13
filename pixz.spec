@@ -3,8 +3,8 @@
 # Not OOM-safe! Still persists:    https://github.com/vasi/pixz/issues/45
 
 Name:           pixz
-Version:        1.0.6
-Release:        2
+Version:        1.0.7
+Release:        1
 Summary:        Parallel indexed xz compressor
 License:        MIT
 URL:            https://github.com/vasi/pixz/
@@ -31,7 +31,7 @@ only one core.
 * Provides -i and -o command line options to specify input and output file.
 
 %prep
-%setup -q
+%autosetup -p1
 # Drop redundant -lm, but it doesn't affect anything serious, and this hack
 # requires autoreconf, so just ignore for a while.
 # https://github.com/vasi/pixz/pull/49
@@ -43,10 +43,10 @@ sed -i 's|cppcheck-src||g' test/Makefile*
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall
+%make_install
 
 %check
 make check
