@@ -4,7 +4,7 @@
 
 Name:           pixz
 Version:        1.0.7
-Release:        1
+Release:        2
 Summary:        Parallel indexed xz compressor
 License:        MIT
 URL:            https://github.com/vasi/pixz/
