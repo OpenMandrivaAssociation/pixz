@@ -9,6 +9,11 @@ Summary:        Parallel indexed xz compressor
 License:        MIT
 URL:            https://github.com/vasi/pixz/
 Source0:        https://github.com/vasi/pixz/releases/download/v%{version}/pixz-%{version}.tar.xz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libarchive)
 BuildRequires:	pkgconfig(liblzma)
 
